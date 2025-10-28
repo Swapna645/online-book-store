@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>User Dashboard</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="site-header">
+  <div class="brand"><h1>📚 BookNest</h1></div>
+  <nav class="main-nav">
+    <a href="index.html">Home</a><a href="cart.html">Cart</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="login.html" id="navAuth">Login</a>
+  </nav>
+</header>
+
+<main class="container">
+  <h2>Welcome, <span id="dashName">Guest</span></h2>
+  <section class="grid" id="dashStats">
+    <div class="card"><div>Total Orders</div><h3 id="totalOrders">0</h3></div>
+    <div class="card"><div>Total Items</div><h3 id="totalItems">0</h3></div>
+    <div class="card"><div>Total Spent</div><h3 id="totalSpent">$0.00</h3></div>
+    <div class="card"><div>Saved Wishlist</div><h3 id="totalWishlist">0</h3></div>
+  </section>
+
+  <h3 style="margin-top:18px">My Orders</h3>
+  <div id="ordersList"></div>
+</main>
+
+<footer class="site-footer">© BookNest</footer>
+<script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contact</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="site-header"><div class="brand"><h1>📚 BookNest</h1></div><nav class="main-nav"><a href="index.html">Home</a><a href="about.html">About</a><a href="dashboard.html">Dashboard</a></nav></header>
+<main class="container"><h2>Contact</h2>
+  <form id="contactForm" class="form">
+    <input id="contactName" class="input" placeholder="Your name" required>
+    <input id="contactEmail" class="input" placeholder="Your email" required>
+    <textarea id="contactMsg" class="input" placeholder="Message" style="height:120px"></textarea>
+    <button class="btn primary" type="submit">Send</button>
+  </form>
+</main>
+<footer class="site-footer">© BookNest</footer>
+<script>
+document.getElementById('contactForm').addEventListener('submit', e=>{e.preventDefault();alert('Message sent (demo). Thank you!');e.target.reset();});
+</script>
+</body></html>

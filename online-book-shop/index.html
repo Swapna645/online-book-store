@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Online Book Shop - Home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand"><h1>📚 BookNest</h1></div>
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="cart.html">Cart (<span id="navCartCount">0</span>)</a>
+    <a href="login.html" id="navAuth">Login</a>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="controls">
+    <input id="searchInput" class="search-input" placeholder="Search by title or author...">
+    <div class="filters">
+      <select id="genreFilter"><option value="all">All Genres</option></select>
+      <select id="ratingFilter"><option value="all">All Ratings</option><option value="4">4★ & Above</option><option value="3">3★ & Above</option></select>
+      <select id="priceFilter"><option value="all">All Prices</option><option value="low">Below $10</option><option value="mid">$10 - $20</option><option value="high">Above $20</option></select>
+      <button id="clearFilters" class="btn">Clear</button>
+    </div>
+  </section>
+
+  <section id="bookList" class="book-list" aria-live="polite"></section>
+</main>
+
+<footer class="site-footer">© BookNest</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
